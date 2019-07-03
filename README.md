@@ -1,14 +1,23 @@
-<h4>Technologies</h4>
-<ul>
-  <li>Virtualenv - `pip3 install virtualenv`</li>
-  <li>Django - `pip3 install Django`</li>
-  <li></li>
-</ul>
+<h2>Project: Songs I Know</h2>
 
-<h4>Django Modules</h4>
-<ul>
-  <li>django.http -> HttpResponse</li>
-  <li>django.shortcuts -> get_object_or_404</li>
-  <li>django.urls -> generic</li>
-  <li></li>
-</ul>
+<p>
+If you are a musician, you know that the more songs you learn - the more songs you forget... which can be quite frustrating.
+</p>
+
+<p>
+Songs-I-Know is a digital solution to this issue: a place for musicians to easily keep track of all the songs they learn over the years.
+</p>
+
+<p>
+This will primarily be a back-end project. Making the "CRUD'ing" aspect easy for our musician users will be important, so we will be utilize the Django framework (known for its approachability and scaleability).
+</p>
+
+<p>
+For each song title a user CRUD's, there will be an option to include Youtube (or other video) tutorials, tabs (sheet music), custom notes, and a relative scale of how much they have "mastered" that song (1-5).
+</p>
+
+<h3>Live Deployments</h3>
+<h5>Admin dashboard (must be created using heroku shell): https://songs-i-know.herokuapp.com/admin/</h5>
+<h5>SongApp (Index): https://songs-i-know.herokuapp.com/songapp/</h5>
+<h5>SongApp (One Song): https://songs-i-know.herokuapp.com/songapp/ + "id"</h5>
+<h5>API (Index): https://songs-i-know.herokuapp.com/api/list/</h5>
