@@ -31,7 +31,23 @@ a:hover {
   color: var(--my-green);
 }
 
-img {
+/* img {
   width: 100px;
   height: 100px;
+} */
+
+.index-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 200px 50px 200px;
+}
+
+.index-text-wrapper {
+  width: 30%;
+  border-style: solid;
+}
+
+.index-text-title > h1 {
+  margin-top: 0px;
 }
