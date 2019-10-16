@@ -2,8 +2,10 @@
   --bg-color: #111111;
   --fg-color: #FCFCFC;
   --my-green: #84D850;
+  --navbar-color: #2D2D2C;
 }
 
+/* ----- General Elements ----- */
 body {
   margin: 0;
   font-family: Candara;
@@ -36,6 +38,30 @@ a:hover {
   height: 100px;
 } */
 
+/* ----- Navbar Elements ----- */
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: var(--navbar-color);
+  color: white;
+  padding: 0;
+  height: 4em;
+}
+
+.main-navbar > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.main-navbar > ul > li {
+  justify-content: space-between;
+}
+
+
+/* ----- Index Elements ----- */
 .index-header {
   display: flex;
   flex-direction: row;
