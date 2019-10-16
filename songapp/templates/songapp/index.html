@@ -1,4 +1,29 @@
+{% load static %}
 
+<div class="index-header">
+  <div class="index-image">
+    <!-- <img src="{{STATIC_URL}}images/ali.jpeg" alt="No Image Available :("/> -->
+    <img src="{% static 'songapp/images/ali.jpeg' %}" alt="No Image Available :(" style="height:25em;width:auto"/>
+  </div>
+  <div class="index-text-wrapper">
+    <div class="index-text-title">
+      <h1>Songs Ali Knows</h1>
+    </div>
+    <div class="index-text-description">
+      <p>
+        Hello, my name is Ali
+      </p>
+      <p>
+        I like to cook Thai food, foster kittens, and watch Jeopardy with Alex Trebek.
+        But most of all...I love to play guitar!
+      </p>
+      <p>
+        I created this website as a repository for all the songs I taught myself to play,
+        including links to video tutorials, song tabs, and lyrics.
+      </p>
+    </div>
+  </div>
+</div>
 
 
 {% if all_songs %}
@@ -13,5 +38,5 @@
     <p>No songs are available.</p>
 {% endif %}
 
-{% load static %}
+
 <link rel="stylesheet" type="text/css" href="{% static 'songapp/style.css' %}">

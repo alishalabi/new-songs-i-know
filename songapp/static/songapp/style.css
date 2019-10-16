@@ -24,8 +24,14 @@ a {
 
 a:link {
   text-decoration: none;
+  transition: 0.25s all ease;
 }
 
 a:hover {
   color: var(--my-green);
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
