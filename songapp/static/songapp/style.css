@@ -1,3 +1,31 @@
+:root {
+  --bg-color: #111111;
+  --fg-color: #FCFCFC;
+  --my-green: #84D850;
+}
+
 body {
-  background: green;
+  margin: 0;
+  font-family: Candara;
+  line-height: 50px;
+  text-decoration: none;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--fg-color);
+  text-decoration: hidden;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--my-green);
 }
