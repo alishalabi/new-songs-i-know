@@ -40,12 +40,14 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   margin: 50px 200px 50px 200px;
 }
 
 .index-text-wrapper {
   width: 30%;
   border-style: solid;
+  padding: 10px 40px 10px 40px;
 }
 
 .index-text-title > h1 {
