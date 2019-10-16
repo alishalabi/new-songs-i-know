@@ -2,6 +2,7 @@
   --bg-color: #111111;
   --fg-color: #FCFCFC;
   --my-green: #84D850;
+  --my-grey: #2D2D2C;
   --navbar-color: #2D2D2C;
 }
 
@@ -33,10 +34,9 @@ a:hover {
   color: var(--my-green);
 }
 
-/* img {
-  width: 100px;
-  height: 100px;
-} */
+img {
+  border-radius: 45%;
+}
 
 /* ----- Navbar Elements ----- */
 .main-navbar {
@@ -47,10 +47,13 @@ a:hover {
   color: white;
   padding: 0;
   height: 4em;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .main-navbar > ul {
   display: flex;
+  justify-content:  space-between;
   flex-direction: row;
   list-style: none;
   align-items: center;
@@ -74,6 +77,7 @@ a:hover {
   width: 30%;
   border-style: solid;
   padding: 10px 40px 10px 40px;
+  background-color: var(--my-grey)
 }
 
 .index-text-title > h1 {
