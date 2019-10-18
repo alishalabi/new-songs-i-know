@@ -1,14 +1,19 @@
 :root {
   --bg-color: #111111;
   --fg-color: #FCFCFC;
-  --my-green: #84D850;
-  --my-grey: #2D2D2C;
+  --song-highlight: #84D850;
+  --index-wrapper: #2D2D2C;
   --navbar-color: #2D2D2C;
+  --title-highlight: #ff0080;
+  --title-color: #111111;
 }
+
 
 /* ----- General Elements ----- */
 body {
   margin: 0;
+  /* padding-left: 30px;
+  padding-right: 30px; */
   font-family: Candara;
   line-height: 50px;
   text-decoration: none;
@@ -31,7 +36,7 @@ a:link {
 }
 
 a:hover {
-  color: var(--my-green);
+  color: var(--song-highlight);
 }
 
 img {
@@ -64,7 +69,7 @@ img {
 }
 
 
-/* ----- Index Elements ----- */
+/* ----- Index Header Elements ----- */
 .index-header {
   display: flex;
   flex-direction: row;
@@ -77,9 +82,35 @@ img {
   width: 30%;
   border-style: solid;
   padding: 10px 40px 10px 40px;
-  background-color: var(--my-grey)
+  background-color: var(--index-wrapper)
 }
 
-.index-text-title > h1 {
+.index-text-title {
   margin-top: 0px;
+  color: var(--title-color);
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px var(--title-highlight),
+    0 0 30px var(--title-highlight),
+    0 0 40px var(--title-highlight),
+    0 0 55px var(--title-highlight),
+    0 0 75px var(--title-highlight);
+}
+
+/* ----- Index Song Elements ----- */
+.index-row:nth-child(event) {
+  background-color: blue;
+}
+
+.index-row-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.index-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

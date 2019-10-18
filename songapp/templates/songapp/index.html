@@ -1,4 +1,6 @@
 {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'songapp/dark-theme.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'songapp/style.css' %}">
 
 <div class="main-navbar">
   <ul>
@@ -36,27 +38,22 @@
 
 
 <div class="index-table">
-  <div class="index-row">
+  <div class="index-row-top">
     <h2>Song Name</h2>
     <h2>Artist</h2>
     <h2>Difficulty Level</h2>
   </div>
-  <div class="index-row">
-    {% if all_songs %}
-        <h2><ul>
-        {% for song in all_songs %}
-            <!-- <li><a href="/songapp/{{ song.id }}/">{{ song.song_name }}</a></li> -->
-            <li><a href="{% url 'songapp:detail' song.id %}">{{ song.song_name }}</a></li>
-            <li><a href="{% url 'songapp:detail' song.id %}">{{ song.artist }}</a></li>
-            <li><a href="{% url 'songapp:detail' song.id %}">{{ song.experience_level }}</a></li>
-        {% endfor %}
-        </ul></h2>
-    {% else %}
-        <p>No songs are available.</p>
-    {% endif %}
-  </div>
+  {% if all_songs %}
+      <ul>
+      {% for song in all_songs %}
+          <div class="index-row">
+            <li><a href="{% url 'songapp:detail' song.id %}"><h2>{{ song.song_name }}</h2></a></li>
+            <li><a href="{% url 'songapp:detail' song.id %}"><h2>{{ song.artist }}</h2></a></li>
+            <li><a href="{% url 'songapp:detail' song.id %}"><h2>{{ song.experience_level }}</h2></a></li>
+          </div>
+      {% endfor %}
+      </ul>
+  {% else %}
+      <p>No songs are available.</p>
+  {% endif %}
 </div>
-
-
-
-<link rel="stylesheet" type="text/css" href="{% static 'songapp/style.css' %}">
