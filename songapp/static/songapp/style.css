@@ -68,6 +68,10 @@ img {
   justify-content: space-between;
 }
 
+.main-navbar > ul> li > h3 {
+  font-size: 2.5em;
+}
+
 
 /* ----- Index Header Elements ----- */
 .index-header {
@@ -99,18 +103,25 @@ img {
 }
 
 /* ----- Index Song Elements ----- */
-.index-row:nth-child(event) {
-  background-color: blue;
+.index-row:nth-child(even) {
+  background-color: var(--index-wrapper);
 }
 
 .index-row-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: var(--index-wrapper);
+  text-decoration: underline;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.index-row {
+.index-row > a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
 }

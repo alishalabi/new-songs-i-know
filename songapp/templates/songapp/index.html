@@ -46,11 +46,12 @@
   {% if all_songs %}
       <ul>
       {% for song in all_songs %}
-          <div class="index-row">
-            <li><a href="{% url 'songapp:detail' song.id %}"><h2>{{ song.song_name }}</h2></a></li>
-            <li><a href="{% url 'songapp:detail' song.id %}"><h2>{{ song.artist }}</h2></a></li>
-            <li><a href="{% url 'songapp:detail' song.id %}"><h2>{{ song.experience_level }}</h2></a></li>
-          </div>
+
+          <div class="index-row"><a href="{% url 'songapp:detail' song.id %}">
+            <li><h3>{{ song.song_name }}</h3></li>
+            <li><h3>{{ song.artist }}</h3></li>
+            <li><h3>{{ song.experience_level }}</h3></li>
+          </a></div>
       {% endfor %}
       </ul>
   {% else %}
