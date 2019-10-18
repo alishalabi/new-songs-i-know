@@ -1,6 +1,26 @@
-<h1>{{ song.song_name }}</h1>
-<h3>Arist: {{ song.artist }}</h3>
-<h2><a href="{{song.youtube_tutorial}}" target="_blank">Youtube Tutorial</a></h2>
-<h2><a href="{{song.song_tab}}" target="_blank">Song Tab</a></h2>
-<h2><a href="{{song.lyrics}}" target="_blank">Song Lyrics</a></h2>
-<h2>Experience Level: {{song.experience_level}}</h2>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'songapp/dark-theme.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'songapp/style.css' %}">
+
+<div class="main-navbar">
+  <ul>
+    <li><h3 class="title"><a href="/songapp">Songs I Know</a></h3></li>
+  </ul>
+  <ul>
+    <li><a href="https://github.com/alishalabi/new-songs-i-know">
+      <img src="{% static 'songapp/images/github.png' %}"
+      alt="No Image Available :(" style="height:3em;width:auto;"/>Github</a></li>
+  </ul>
+</div>
+
+<div class="song-detail-wrapper">
+  <h1>{{ song.song_name }}</h1>
+  <div class="song-detail-content">
+    <h2><a href="{{song.youtube_tutorial}}" target="_blank">Youtube Tutorial</a></h2>
+    <h2><a href="{{song.song_tab}}" target="_blank">Song Tab</a></h2>
+    <h2><a href="{{song.lyrics}}" target="_blank">Song Lyrics</a></h2>
+    <h4>Arist: {{ song.artist }}</h4>
+    <h4>Experience Level: {{song.experience_level}}</h4>
+  </div>
+
+</div>

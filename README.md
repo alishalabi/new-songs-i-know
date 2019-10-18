@@ -21,3 +21,14 @@ For each song title a user CRUD's, there will be an option to include Youtube (o
 <h5>SongApp (Index): https://songs-i-know.herokuapp.com/songapp/</h5>
 <h5>SongApp (One Song): https://songs-i-know.herokuapp.com/songapp/ + "id"</h5>
 <h5>API (Index): https://songs-i-know.herokuapp.com/api/list/</h5>
+
+<h3>Project Upgrades: Oct 2019</h3>
+<ul>
+  <li>Added HTML Markup For Index Header</li>
+  <li>Added Navbar</li>
+  <li>Added CSS Stylesheet</li>
+  <li>Added Dark Theme</li>
+  <li></li>
+  <li></li>
+  <li></li>
+<ul>

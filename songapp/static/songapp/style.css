@@ -1,14 +1,3 @@
-:root {
-  --bg-color: #111111;
-  --fg-color: #FCFCFC;
-  --song-highlight: #84D850;
-  --index-wrapper: #2D2D2C;
-  --navbar-color: #2D2D2C;
-  --title-highlight: #ff0080;
-  --title-color: #111111;
-}
-
-
 /* ----- General Elements ----- */
 body {
   margin: 0;
@@ -68,8 +57,12 @@ img {
   justify-content: space-between;
 }
 
-.main-navbar > ul> li > h3 {
+.main-navbar > ul > li > h3 {
   font-size: 2.5em;
+}
+
+.main-navbar > ul > li > h3 > a:hover {
+  color: var(--title-highlight);
 }
 
 
@@ -102,6 +95,10 @@ img {
     0 0 75px var(--title-highlight);
 }
 
+.index-text-description {
+  font-size: 1.25em;
+}
+
 /* ----- Index Song Elements ----- */
 .index-row:nth-child(even) {
   background-color: var(--index-wrapper);
@@ -117,6 +114,10 @@ img {
   padding-right: 30px;
 }
 
+.index-row {
+  text-align: left;
+}
+
 .index-row > a {
   display: flex;
   flex-direction: row;
@@ -124,4 +125,29 @@ img {
   margin-left: 0px;
   padding-left: 30px;
   padding-right: 30px;
+
 }
+
+/* ----- Song Detail Elements ----- */
+.song-detail-wrapper {
+  text-align: center;
+  margin: 50px 200px 50px 200px;
+  text-align: center;
+  border-style: solid;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--index-wrapper);
+  line-height: 40px;
+}
+
+.song-detail-wrapper > h1 {
+  text-decoration: underline;
+}
+
+/* .song-detail-content {
+  border-style: solid;
+  padding: 10px 40px 10px 40px;
+  background-color: var(--index-wrapper);
+  width: 30%;
+  text-align: center;
+  margin: 50px 200px 50px 200px;
+} */
