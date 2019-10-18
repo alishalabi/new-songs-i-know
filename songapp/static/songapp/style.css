@@ -102,7 +102,7 @@ img {
 }
 
 /* ----- Index Song Elements ----- */
-.index-row:nth-child(even) {
+.index-table > ul> li:nth-child(even) {
   background-color: var(--index-wrapper);
 }
 
@@ -116,8 +116,12 @@ img {
   padding-right: 30px;
 }
 
-.index-row {
-  text-align: left;
+.index-row h3{
+  flex: 1;
+}
+
+.index-row-top h2{
+  flex: 1;
 }
 
 .index-row > a {
@@ -128,6 +132,14 @@ img {
   padding-left: 30px;
   padding-right: 30px;
 
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 /* ----- Song Detail Elements ----- */

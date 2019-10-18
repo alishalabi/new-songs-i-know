@@ -1,7 +1,6 @@
 {% load static %}
-<!-- <link rel="stylesheet" type="text/css" href="{% static 'songapp/dark-theme.css' %}"> -->
-<link rel="stylesheet" type="text/css" href="{% static 'songapp/light-theme.css' %}">
-<!-- <link rel="stylesheet" type="text/css" href="{% static 'songapp/red-theme.css' %}"> -->
+<link rel="stylesheet" type="text/css" href="{% static 'songapp/dark-theme.css' %}">
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'songapp/light-theme.css' %}"> -->
 <link rel="stylesheet" type="text/css" href="{% static 'songapp/style.css' %}">
 
 <div class="main-navbar">
@@ -9,9 +8,9 @@
     <li><h3 class="title"><a href="/songapp">Songs I Know</a></h3></li>
   </ul>
   <ul>
-    <li><a href="https://github.com/alishalabi/new-songs-i-know">
+    <li><a href="https://github.com/alishalabi/new-songs-i-know" target="_blank">
       <img src="{% static 'songapp/images/github.png' %}"
-      alt="No Image Available :(" style="height:3em;width:auto;"/>Github</a></li>
+      alt="No Image Available :(" style="height:3em;width:auto;padding-top:20px;"/>Github</a></li>
   </ul>
 </div>
 
@@ -41,21 +40,22 @@
 
 <div class="index-table">
   <div class="index-row-top">
-    <h2>Song Name</h2>
-    <h2>Artist</h2>
-    <h2>Difficulty Level</h2>
+    <h2 class="left">Song Name</h2>
+    <h2 class="center">Artist</h2>
+    <h2 class="right">Difficulty Level</h2>
   </div>
   {% if all_songs %}
-      <ul>
-      {% for song in all_songs %}
-
-          <div class="index-row"><a href="{% url 'songapp:detail' song.id %}">
-            <li><h3>{{ song.song_name }}</h3></li>
-            <li><h3>{{ song.artist }}</h3></li>
-            <li><h3>{{ song.experience_level }}</h3></li>
-          </a></div>
-      {% endfor %}
-      </ul>
+  <ul>
+  {% for song in all_songs %}
+    <li>
+      <div class="index-row"><a href="{% url 'songapp:detail' song.id %}">
+        <h3 class="left">{{ song.song_name }}</h3>
+        <h3 class="center">{{ song.artist }}</h3>
+        <h3 class="right">{{ song.experience_level }}</h3>
+      </a></div>
+    </li>
+  {% endfor %}
+  </ul>
   {% else %}
       <p>No songs are available.</p>
   {% endif %}
