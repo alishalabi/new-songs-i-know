@@ -28,7 +28,7 @@ For each song title a user CRUD's, there will be an option to include Youtube (o
   <li>Added Navbar</li>
   <li>Added CSS Stylesheet</li>
   <li>Added Dark Theme</li>
-  <li></li>
+  <li>Modified Visual Hierachy</li>
   <li></li>
   <li></li>
 <ul>
